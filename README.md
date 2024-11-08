@@ -13,7 +13,7 @@ Ensure Docker is installed on your machine.
 
 1. **Clone this repository**:
     ```sh
-    git clone https://github.com/lemon1964/Fullstackopen_GitHub.git
+    git clone https://github.com/lemon1964/Blogs_Postgres.git
     ```
 2. Navigate to the backend (`postgres-blogs-backend`) and frontend (`blogs_query`) directories within the project for setup in `part13`.
 
