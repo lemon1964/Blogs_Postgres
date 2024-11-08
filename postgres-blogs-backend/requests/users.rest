@@ -1,0 +1,71 @@
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "lemon@lemon.com",
+  "name": "Michael",
+  "password": "sokol"
+}
+
+###
+
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "lemon@lemon.com",
+  "password": "sokol"
+}
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "admin@admin.com",
+  "name": "Admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "admin@admin.com",
+  "password": "admin"
+}
+
+
+###
+
+DELETE http://localhost:3003/api/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJsZW1vbkBsZW1vbi5jb20iLCJpYXQiOjE3MzA3OTM2NzksImV4cCI6MTczMDc5NzI3OX0.5dzR05r2m7XEFZDa_amZxeBlnFlZq_mndqUbVlfQyEQ
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "test@test.com",
+  "name": "Tester",
+  "password": "tester"
+}
+
+###
+
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "test@test.com",
+  "password": "tester"
+}
+
+###

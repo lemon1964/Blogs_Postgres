@@ -1,0 +1,46 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{ 
+    "title": "Learning JavaScript Design Patterns2",
+    "author": "William Oliveira",
+    "url": "https://patterns.addy.ie/",
+    "likes": 5
+
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJsZW1vbkBsZW1vbi5jb20iLCJpYXQiOjE3MzA3OTM4NjksImV4cCI6MTczMDc5NzQ2OX0.JpFaa-19oHc6GBLnXCFJ9oE6vzUu_UpR7eJAI3onlD8
+
+{ 
+    "title": "Blog for Exercise 13.24 with session, token and user.disabled check",
+    "author": "Lemon",
+    "url": "https://Test",
+    "likes": 5,
+    "year": 2023
+}
+
+###
+
+POST http://localhost:3003/api/readinglists
+Content-Type: application/json
+
+{
+  "blogId": 3,
+  "userId": 2
+}
+
+###
+
+PUT http://localhost:3003/api/readinglists/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlbW9uQGxlbW9uLmNvbSIsImlkIjoxLCJpYXQiOjE3MzA2NzM5MDgsImV4cCI6MTczMDY3NzUwOH0.HhOP3HNkbdNSgBGdiqNDsceRFXFquwT3CKm9TDnN_a0
+
+{ "read": true }
+
+###
+
+
